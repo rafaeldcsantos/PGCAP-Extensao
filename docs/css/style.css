@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-strong: #0a6294;
+  --orange-strong: #c0721a;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding-top: 5px;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(10, 98, 148, 0.35), rgba(192, 114, 26, 0.35)),
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url("../images/ExperiencialLearning.svg") center top / cover no-repeat;
+  background-attachment: fixed, fixed;
+}
+
+html {
+  min-height: 100%;
+  background:
+    linear-gradient(135deg, rgba(10, 98, 148, 0.35), rgba(192, 114, 26, 0.35)),
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url("../images/ExperiencialLearning.svg") center top / cover no-repeat;
+  background-attachment: fixed, fixed;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.contents {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #e6e9ef;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 16px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+/* Tipo A: bloco de título (copiado do antigo hero__top) */
+.div__top {
+  margin: 0;
+  padding: 0;
+  border-radius: 14px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  background: linear-gradient(135deg, #08547f, #a46216);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fdfefe;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-logo {
+  height: 96px;
+  width: auto;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.2));
+  opacity: 0.9;
+}
+
+.hero__header h1 {
+  margin: 8px 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #FDE7CD;
+}
+
+.lede {
+  margin: 4px 0 0 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #fdfefe;
+}
+
+/* Tipo B: bloco de conteúdo translúcido */
+.div__contents {
+  margin-top: 10px;
+  padding: 0 0 8px 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #0a2740;
+}
+
+.div__contents h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #fdfefe;
+  background: linear-gradient(135deg, #08547f, #a46216);
+  padding: 6px 10px 8px 10px;
+  border-radius: 8px;
+}
+
+.div__contents p {
+  margin: 0 0 8px 0;
+  padding: 6px 10px 8px 10px;
+}
+
+.schedule {
+  width: calc(100% - 100px);
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 8px 50px 12px;
+}
+
+.schedule th,
+.schedule td {
+  border: 1px solid rgba(13, 125, 189, 0.2);
+  padding: 4px 6px 6px 6px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.schedule td:first-child,
+.schedule th:first-child {
+  text-align: right;
+}
+
+.schedule thead th {
+  background: #0D7EBF;
+  color: #fdfefe;
+}
+
+.schedule tbody tr:nth-child(odd) {
+  background: rgba(245, 245, 255, 0.6);
+}
+
+.schedule tbody tr:nth-child(even) {
+  background: rgba(245, 245, 245, 0.6);
+}
+
+a {
+  color: #0a6294;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0a6294;
+}
+
+a:hover {
+  color: #c0721a;
+  text-decoration: underline;
+}
+
+.sep::before {
+  content: "•";
+  color: #F79F3A;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 0 6px;
+}

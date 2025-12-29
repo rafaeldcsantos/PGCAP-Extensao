@@ -1,0 +1,243 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #0d7dbd;
+  --orange: #f79322;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  padding-top: 5px;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(10, 98, 148, 0.35), rgba(192, 114, 26, 0.35)),
+    url("../images/ExperiencialLearning.svg") center top / cover no-repeat;
+  background-attachment: fixed, fixed;
+}
+
+html {
+  min-height: 100%;
+  background:
+    linear-gradient(135deg, rgba(10, 98, 148, 0.35), rgba(192, 114, 26, 0.35)),
+    url("../images/ExperiencialLearning.svg") center top / cover no-repeat;
+  background-attachment: fixed, fixed;
+}
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3); /* translúcido */
+  border: 2px solid #e6e9ef;
+  border-radius: 20px;
+  /* padding: 16px 0 20px 0; */
+  padding: 10px;
+  margin-top: 16px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+  pointer-events: none;
+}
+
+.hero__top,
+.hero__bottom {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  border: 1px solid rgba(13, 125, 189, 0.5);
+  border-radius: 14px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero__top {
+  margin: 0px 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero__bottom {
+  margin: 10px;
+  min-height: 30%;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hero__top h1,
+.hero__top p,
+.hero__top .eyebrow {
+  font-weight: 700;
+}
+
+.panel-title {
+  margin: 0 0 12px 0;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #08547f, #a46216);
+  color: #fdfefe;
+  font-size: 1rem;
+  font-weight: 700;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.hero__bottom .panel-title {
+  background: linear-gradient(135deg, #08547f, #a46216);
+}
+
+.hero__tabs {
+  position: relative;
+  width: 100%;
+  margin: 0 0 14px 0;
+  border: 1px solid rgba(13, 125, 189, 0.5);
+  border-radius: 14px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 16px;
+}
+
+.hero__tabs h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  color: #07466a;
+}
+
+.tabs__controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.tab-button {
+  border: 1px solid rgba(13, 125, 189, 0.35);
+  background: #ffffff;
+  color: #fdfefe;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  border-color: #0d7dbd;
+  box-shadow: 0 8px 18px rgba(13, 125, 189, 0.12);
+}
+
+.tab-button.active {
+  background: linear-gradient(135deg, #08547f, #a46216);
+  border-color: rgba(13, 125, 189, 0.5);
+  color: #fdfefe;
+}
+
+.tabs__panels {
+  margin: 0;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-text {
+  margin: 0;
+  font-size: 0.98rem;
+  color: #2c2c2c;
+}
+
+.hero__footer {
+  position: relative;
+  /* width: calc(100% - 70px); */
+  margin: 0 0 10px 0px;
+  border: 1px solid rgba(13, 125, 189, 0.5);
+  border-radius: 14px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.97);
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.hero__more {
+  margin: 10px 0 0 0;
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #07466a;
+}
+
+.hero__more a {
+  color: #0d7dbd;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero__more a:hover {
+  text-decoration: underline;
+}
+
+.hero__bottom h2 {
+  margin: 10px;
+  font-size: 1.1rem;
+  color: #07466a;
+}
+
+.hero__content {
+  margin: 0px;
+  background: linear-gradient(135deg, #08547f, #a46216);
+  padding: 10px;
+  border-radius: 10px;
+  color: #fdfefe;
+}
+
+.hero__content h1 {
+  margin: 10px;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: #fdfefe;
+}
+
+.lede {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.muted {
+  color: #2c2c2c;
+  margin: 6px 0;
+}
+
+.footer-link {
+  color: #0d7dbd;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
