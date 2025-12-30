@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
   padding-top: 5px;
+  padding-bottom: 25px;
   min-height: 100vh;
   background:
     linear-gradient(135deg, rgba(10, 98, 148, 0.35), rgba(192, 114, 26, 0.35)),
@@ -31,7 +32,7 @@ html {
 }
 
 .page {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: 0 auto;
   min-height: 100vh;
   background: transparent;
