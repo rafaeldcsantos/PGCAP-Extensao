@@ -160,6 +160,11 @@ html {
   background: rgba(245, 245, 245, 0.6);
 }
 
+.schedule tbody tr.holiday {
+  background: #fff3e6;
+  color: #895922;
+}
+
 a {
   color: #0a6294;
   text-decoration: none;
