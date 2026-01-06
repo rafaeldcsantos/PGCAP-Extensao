@@ -32,7 +32,7 @@ html {
 }
 
 .page {
-  max-width: 1140px;
+  max-width: 1024px;
   margin: 0 auto;
   min-height: 100vh;
   background: transparent;
@@ -183,6 +183,6 @@ a:hover {
   content: "•";
   color: #F79F3A;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1em;
   padding: 0 6px;
 }
