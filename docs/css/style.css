@@ -127,6 +127,25 @@ html {
   padding: 6px 10px 8px 10px;
 }
 
+.topic-list {
+  margin: -2px 10px 12px 34px;
+  padding-left: 18px;
+}
+
+.topic-list li {
+  margin-bottom: 0.45rem;
+  break-inside: avoid;
+}
+
+.topic-list li::marker {
+  color: #c0721a;
+}
+
+.topic-list--columns {
+  column-count: 3;
+  column-gap: 2rem;
+}
+
 .schedule {
   width: calc(100% - 100px);
   border-collapse: collapse;
@@ -185,4 +204,16 @@ a:hover {
   font-weight: 800;
   font-size: 1em;
   padding: 0 6px;
+}
+
+@media (max-width: 900px) {
+  .topic-list--columns {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .topic-list--columns {
+    column-count: 1;
+  }
 }
