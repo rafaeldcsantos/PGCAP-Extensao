@@ -179,7 +179,7 @@ html {
   background: rgba(245, 245, 245, 0.6);
 }
 
-.schedule tbody tr.holiday {
+.schedule tbody tr.holiday > td {
   background: #fff3e6;
   color: #895922;
 }
