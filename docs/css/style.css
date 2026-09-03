@@ -127,6 +127,18 @@ html {
   padding: 6px 10px 8px 10px;
 }
 
+/* Mensagens importantes dentro dos blocos de conteúdo */
+.div__important-message {
+  margin: 10px 14px 2px;
+  border-radius: 8px;
+  background: rgba(255, 224, 224, 0.88);
+  color: #652020;
+}
+
+.div__important-message p {
+  margin: 0;
+}
+
 .topic-list {
   margin: -2px 10px 12px 34px;
   padding-left: 18px;
@@ -142,7 +154,7 @@ html {
 }
 
 .topic-list--columns {
-  column-count: 3;
+  column-count: 2;
   column-gap: 2rem;
 }
 
